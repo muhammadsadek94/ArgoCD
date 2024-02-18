@@ -1,0 +1,162 @@
+          ok  Starting unison for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/code
+     success  Unison server started
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/code
+          ok  Starting unison for sync codered-mysql-database-sync
+Unison 2.52.0 (ocaml 4.12.0): Contacting server...
+Connected [//ec8ba0387e7c//app_sync -> //marks-mbp//Volumes/Data/workspace/intcore/2021/codered/codered-backend/code]
+ 
+Looking for changes
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+  Waiting for changes from server
+Reconciling changes
+Nothing to do: replicas have not changed since last sync.
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/db
+     success  Unison server started
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/db
+          ok  Starting unison for sync codered-redis-database-sync
+Unison 2.52.0 (ocaml 4.12.0): Contacting server...
+Connected [//19c08d5e055d//app_sync -> //marks-mbp//Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/db]
+ 
+Looking for changes
+  Waiting for changes from server
+Reconciling changes
+Nothing to do: replicas have not changed since last sync.
+          ok  codered-redis-database-sync container still running, restarting unison in container
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/redis
+     success  Unison server started
+          ok  Synced /Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/redis
+Unison 2.52.0 (ocaml 4.12.0): Contacting server...
+Connected [//8659a6f76afb//app_sync -> //marks-mbp//Volumes/Data/workspace/intcore/2021/codered/codered-backend/docker-volumes-data/redis]
+ 
+Looking for changes
+  Waiting for changes from server
+Reconciling changes
+Nothing to do: replicas have not changed since last sync.
+Fatal error: Lost connection with the server
+Fatal error: Lost connection with the server
+Fatal error: Lost connection with the server
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync
+[2022-09-13 10:39:18 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:39:22 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:39:25 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+[2022-09-13 10:40:42 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync
+[2022-09-13 10:40:46 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:40:49 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync
+[2022-09-13 10:44:07 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:44:09 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:44:11 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync
+[2022-09-13 10:54:05 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:54:09 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-13 10:54:13 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync
+[2022-09-15 16:10:55 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-15 16:11:05 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+[2022-09-15 16:11:07 +0200] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync codered-src-code-sync
+          ok  codered-src-code-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-src-code-sync
+          ok  Starting native_osx for sync codered-mysql-database-sync
+          ok  codered-mysql-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-mysql-database-sync
+          ok  Starting native_osx for sync codered-redis-database-sync
+          ok  codered-redis-database-sync container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: codered-redis-database-sync

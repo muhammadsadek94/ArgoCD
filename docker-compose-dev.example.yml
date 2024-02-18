@@ -1,0 +1,47 @@
+version: "2"
+services:
+  webserver:
+    image: nginx:alpine
+    volumes:
+      - codered-src-code-sync:/var/www:nocopy
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    ports:
+      - "8080:80"
+  app:
+    ## read php image from our custom docker image ##
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    volumes:
+      ## copy project files to /var/www ##
+      - codered-src-code-sync:/var/www:nocopy
+    ports:
+      - "8081:9001"
+    working_dir: /var/www
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./docker-volumes-data/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: project_database
+      MYSQL_ROOT_PASSWORD: root
+  redis:
+    image: redis
+    volumes:
+      - ./docker-volumes-data/redis:/data
+    ports:
+      - "6380:6379"
+
+volumes:
+  codered-src-code-sync:
+    external: true
+  codered-mysql-database-sync:
+    external: true
+  codered-redis-database-sync:
+    external: true
+    ##jk
+    ##jffl
+

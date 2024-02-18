@@ -1,0 +1,67 @@
+<?php
+
+return [
+    // labels and texts
+    "Users"      => "Users",
+    "Goals"      => "Goals",
+    "goals_question"      => "What is your next career goal?",
+    "Developers" => "Developers",
+    "Providers" => "Providers",
+    "email" => "Email",
+    "phone" => "Phone",
+    "name" => "Name",
+    "first_name" => "First Name",
+    "last_name" => "Last Name",
+    "password" => "Password",
+    "image" => "Image",
+    "cover" => "Cover",
+    "gender" => "Gender",
+    "male" => "Male",
+    "female" => "Female",
+    "birth_date" => "Birth Date",
+
+    "Activation" => "Activation",
+    "subscription" => "Subscribe to latest offers",
+    "description" => "Description",
+    "featured" => "Featured",
+    "update_phone" => "Update Phone",
+    //messages
+    'correct_otp' => "The otp that entered is valid",
+    'activation_success' => "You account has been activated۔",
+    'otp_sent' => "A verification code has been sent to you.",
+    'otp_sent_mobile' => "A verification code has been sent to you on Mobile Number.",
+    'otp_sent_email' => "A verification code has been sent to you on Email.",
+    'password_changed' => 'Password has been changed successfully',
+    'email_changed' => 'Email has been updated successfully',
+    'password_reset_success' => 'Password has been changed successfully',
+    'update_password' => 'Update Password',
+
+    //validations
+    'update_phone_with_the_same_phone' => "You can't change your phone number to the same phone number",
+    'update_email_with_the_same_email' => "You can't change your email address to the same email address",
+    'current_password_is_invalid' => 'The entered current password is invalid',
+    'password_is_invalid' => 'The entered password is invalid',
+    "user_not_found" => "User not found",
+    'invalid_credentials' => 'Invalid credentials',
+    'invalid_credentials' => 'Invalid credentials',
+    'Password Correct' => 'Password Correct',
+    'incorrect_otp' => "Invalid entered otp code.",
+    'account_suspended' => 'Your account has been suspended via Administration.',
+    'update_password_forbidden_due_social_media_registration' => 'Update password is forbidden because user registered via social media',
+    'Instructors' => 'Instructors',
+     "activation_date" => "Activation Date",
+      "expiry_date" => "Expiry Date",
+      "access_level" => "Access Level",
+      "status" => "Status",
+      "create_user_tags" => "Create User Tag",
+      "User Tags" => "User Tags",
+      "login" => "Last Login",
+    'Subscription Cancellations' => 'Subscription Cancellations',
+    'Payouts' => 'Payouts',
+    'job' => 'Job',
+    'certificate_number' => 'Certificate Number',
+    'subscription' => 'Subscription ID [Samcart]',
+    'Default Images'  => 'Default Images'
+
+
+];

@@ -1,0 +1,58 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - src
+
+    # The level 8 is the highest level
+    #0 - basic checks, unknown classes, unknown functions, unknown methods called on $this, wrong number of arguments passed to those methods and functions, always undefined variables
+    #1 - possibly undefined variables, unknown magic methods and properties on classes with __call and __get
+    #2 - unknown methods checked on all expressions (not just $this), validating PHPDocs
+    #3 - return types, types assigned to properties
+    #4 - basic dead code checking - always false instanceof and other type checks, dead else branches, unreachable code after return; etc.
+    #5 - checking types of arguments passed to methods and functions
+    #6 - report missing typehints
+    #7 - report partially wrong union types - if you call a method that only exists on some types in a union type, level 7 starts to report that; other possibly incorrect situations
+    #8 - report calling methods and accessing properties on nullable types
+    level: 8
+
+    ignoreErrors:
+        - '#Unsafe usage of new static#'
+        - '#Access to an undefined property [a-zA-Z0-9\\_]+Resource::\$#'
+
+    excludes_analyse:
+        - ./src/Foundation/Repositories/Repository.php
+        - ./src/Foundation/Http/Controllers/CoreController.php
+
+    autoload_directories:
+        - ./src/Domains/User/database/migrations/2020_02_27_095057_add_language_to_oauth_access_tokens.php
+        - ./src/Domains/User/database/migrations/2020_02_26_140938_add_device_token_to_oauth_access_tokens.php
+        - ./src/Domains/User/database/migrations/2019_12_01_000005_create_oauth_personal_access_clients_table.php
+        - ./src/Domains/User/database/migrations/2019_12_01_000004_create_oauth_clients_table.php
+        - ./src/Domains/User/database/migrations/2019_12_01_000003_create_oauth_refresh_tokens_table.php
+        - ./src/Domains/User/database/migrations/2019_12_01_000002_create_oauth_access_tokens_table.php
+        - ./src/Domains/User/database/migrations/2019_12_01_000001_create_oauth_auth_codes_table.php
+        - ./src/Domains/User/database/migrations/2019_11_13_100514_create_users_table.php
+        - ./src/Domains/Uploads/database/migrations/2015_11_14_081642_create_uploads_table.php
+        - ./src/Domains/Notification/database/migrations/2020_02_23_152240_create_notifications_table.php
+        - ./src/Domains/Geography/database/migrations/2020_02_10_175004_add_photo_for_locations.php
+        - ./src/Domains/Geography/database/migrations/2019_11_18_200943_create_areas_table.php
+        - ./src/Domains/Geography/database/migrations/2019_11_18_200935_create_cities_table.php
+        - ./src/Domains/Geography/database/migrations/2019_11_18_200923_create_countries_table.php
+        - ./src/Domains/Favourite/database/migrations/2020_02_10_123829_create_favourites_table.php
+        - ./src/Domains/Faq/database/migrations/2019_12_25_082951_create_faqs_table.php
+        - ./src/Domains/ContactUs/database/migrations/2019_12_24_151329_create_contact_uses.php
+        - ./src/Domains/ContactUs/database/migrations/2019_12_24_150056_create_contact_us_subjects_table.php
+        - ./src/Domains/Admin/database/migrations/2020_04_01_082542_add_role_id_to_admins_table.php
+        - ./src/Domains/Admin/database/migrations/2020_04_01_082115_create_ability_role_table.php
+        - ./src/Domains/Admin/database/migrations/2020_04_01_082050_create_roles_table.php
+        - ./src/Domains/Admin/database/migrations/2020_04_01_082040_create_abilities_table.php
+        - ./src/Domains/Admin/database/migrations/2020_04_01_081100_create_modules_table.php
+        - ./src/Domains/Admin/database/migrations/2020_02_11_181305_create_sessions_table.php
+        - ./src/Domains/Admin/database/migrations/2019_11_24_130736_create_admins_table.php
+        - ./src/Domains/Admin/database/migrations/2014_10_12_100000_create_password_resets_table.php
+
+
+    checkMissingIterableValueType: false

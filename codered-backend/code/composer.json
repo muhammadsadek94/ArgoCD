@@ -1,0 +1,111 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "repositories": [
+
+        {
+            "type": "vcs",
+            "url": "https://github.com/intcore-company/oneart-foundation"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/intcore-company/oneart-console"
+        }
+
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-gd": "*",
+        "anlutro/l4-settings": "^v1.2.0",
+        "barryvdh/laravel-debugbar": "^3.3",
+        "barryvdh/laravel-dompdf": "^v2.0.1",
+        "brightcove/api": "^2.1",
+        "carlos-meneses/laravel-mpdf": "^2.1",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^v3.0.0",
+        "gentor/activecampaign": "^1.0",
+        "guzzlehttp/guzzle": "^7.5.0",
+        "intcore-company/oneart-console": "9.1",
+        "intcore-company/oneart-foundation": "^9.0",
+        "intervention/image": "^2.5",
+        "laravel/framework": "^9.0",
+        "laravel/horizon": "^v5.14.0",
+        "laravel/legacy-factories": "v1.3.2",
+        "laravel/passport": "^v11.6.0",
+        "laravel/socialite": "^5.5",
+        "laravel/telescope": "^v4.13.0",
+        "laravel/tinker": "^2.0",
+        "laravelcollective/html": "^6.0",
+        "lcobucci/jwt": "4.3.0",
+        "maatwebsite/excel": "^3.1",
+        "matthewbdaly/laravel-azure-storage": "^2.0.8",
+        "mpdf/mpdf": "^v8.0.10",
+        "pbmedia/laravel-ffmpeg": "^8.2.2",
+        "predis/predis": "^1.1",
+        "sentry/sentry-laravel": "^3.1",
+        "spatie/laravel-medialibrary": "^10.7.10",
+        "twilio/sdk": "^6.13",
+        "vimeo/vimeo-api": "^3.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.7",
+        "spatie/laravel-ignition": "^1.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^6.1",
+        "nunomaduro/larastan": "^1.0.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "autoload": {
+        "files": [
+            "src/Foundation/Helpers.php"
+        ],
+        "psr-4": {
+            "Framework\\": "app/",
+            "App\\": "src/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

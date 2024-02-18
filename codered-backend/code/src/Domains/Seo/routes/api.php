@@ -1,0 +1,35 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Service - API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for this service.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the controller to call when that URI is requested.
+|
+*/
+
+// Prefix: /api/v1/seo
+Route::group(['prefix' => 'v1/seo'], function() {
+
+    // The controllers live in src/Domains/Seo/Http/Controllers
+    // Route::resource('/seo', 'SeoController');
+
+    
+
+    Route::group(['middleware'=>'auth:api'], function() {
+
+        Route::group(['prefix'=>'app'], function() {
+
+        });
+
+    });
+
+    Route::group(['prefix'=>'app'], function() {
+
+    });
+    
+
+});
